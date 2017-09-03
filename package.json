@@ -3,9 +3,9 @@
   "version": "0.0.1",
   "description": "Boilerplate for react-redux project with nextjs and tests",
   "scripts": {
-    "dev": "node server.js",
-    "start": "npm run build && cross-env NODE_ENV=production node server.js",
-    "build": "next build",
+    "dev": "node src/server.js",
+    "start": "npm run build && cross-env NODE_ENV=production node src/server.js",
+    "build": "next build src",
     "lint": "eslint -c .eslintrc .",
     "analyze": "cross-env ANALYZE=1 npm run build"
   },
