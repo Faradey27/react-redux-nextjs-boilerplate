@@ -1,7 +1,7 @@
 const About = () => (
   <div>
-    <p>About Next.js</p>
+    <p>{'About Next.js'}</p>
   </div>
-)
+);
 
-export default About
+export default About;
