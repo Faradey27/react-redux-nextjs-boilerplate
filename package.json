@@ -1,0 +1,51 @@
+{
+  "name": "react-redux-nextjs-boilerplate",
+  "version": "0.0.1",
+  "description": "Boilerplate for react-redux project with nextjs and tests",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "npm run build && cross-env NODE_ENV=production node server.js",
+    "build": "next build",
+    "analyze": "cross-env ANALYZE=1 npm run build"
+  },
+  "dependencies": {
+    "compression": "^1.7.0",
+    "cross-env": "^5.0.5",
+    "express": "^4.15.4",
+    "next": "^3.2.1",
+    "progress-bar-webpack-plugin": "^1.10.0",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
+  },
+  "devDependencies": {
+    "webpack-bundle-analyzer": "^2.9.0"
+  },
+  "main": "pages/index.js",
+  "keywords": [
+    "react",
+    "webpack2",
+    "redux",
+    "jest",
+    "nextjs",
+    "windows",
+    "i18n"
+  ],
+  "author": {
+    "name": "Andrii Tiertyshnyi",
+    "email": "andrii.tiertyshnyi@gmail.com"
+  },
+  "contributors": [
+    {
+      "name": "Andrii Tiertyshnyi(Faradey27)",
+      "url": "https://github.com/Faradey27"
+    }
+  ],
+  "license": "Apache License 2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Faradey27/react-redux-nextjs-boilerplate"
+  },
+  "bugs": {
+    "url": "https://github.com/Faradey27/react-redux-nextjs-boilerplate/issues"
+  }
+}
