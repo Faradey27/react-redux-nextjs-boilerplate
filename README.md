@@ -1,0 +1,1 @@
+# react-redux-nextjs-boilerplate
