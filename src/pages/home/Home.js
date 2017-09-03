@@ -1,6 +1,6 @@
 const Home = () => (
   <div>
-    <p>{'Home Next.js'}</p>
+    <p>{'Home Page'}</p>
   </div>
 );
 

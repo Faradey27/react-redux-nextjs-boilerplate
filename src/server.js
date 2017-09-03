@@ -20,8 +20,12 @@ app.prepare().
       if (err) throw err;
       console.info('> Ready on http://localhost:3000');
     });
+
+    return server;
   }).
   catch((ex) => {
     console.error(ex.stack);
     throw ex.stack;
   });
+
+module.exports = app;

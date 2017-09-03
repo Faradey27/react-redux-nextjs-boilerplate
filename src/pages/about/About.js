@@ -1,6 +1,6 @@
 const About = () => (
   <div>
-    <p>{'About Next.js'}</p>
+    <p>{'About Page'}</p>
   </div>
 );
 
