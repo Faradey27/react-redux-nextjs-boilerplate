@@ -1,3 +1,4 @@
+const webpack = require('webpack');
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 const ProgressBarPlugin = require('progress-bar-webpack-plugin');
 const { ANALYZE } = process.env;
@@ -20,6 +21,7 @@ module.exports = {
     });
 
     config.plugins.push(new ProgressBarPlugin());
+    config.plugins.push(new webpack.IgnorePlugin(/__test__/));
 
     return config;
   },
