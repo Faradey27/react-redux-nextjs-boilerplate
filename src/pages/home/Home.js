@@ -1,5 +1,5 @@
 const Home = () => (
-  <div>
+  <div data-testid="homePage">
     <p>{'Home Page'}</p>
   </div>
 );
