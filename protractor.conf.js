@@ -1,6 +1,6 @@
 const spawn = require('react-dev-utils/crossSpawn');
 const { exec } = require('child_process');
-const TIME_FOR_SERVER_SETUP = 1000;
+const TIME_FOR_SERVER_SETUP = 2000;
 
 exports.config = {
   framework: 'jasmine',
