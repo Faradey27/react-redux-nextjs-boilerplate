@@ -1,4 +1,3 @@
-const path = require('path');
 const spawn = require('react-dev-utils/crossSpawn');
 const { exec } = require('child_process');
 const TIME_FOR_SERVER_SETUP = 1000;
@@ -19,7 +18,7 @@ exports.config = {
     spawn.sync('npm', ['run', 'build'], { stdio: 'inherit' });
     spawn('npm', ['run', 'start:server'], { stdio: 'inherit' });
 
-    const promise = new Promise((resolve) => setTimeout(() => resolve(), TIME_FOR_SERVER_SETUP))
+    const promise = new Promise((resolve) => setTimeout(() => resolve(), TIME_FOR_SERVER_SETUP));
 
     return promise;
   },

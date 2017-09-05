@@ -7,12 +7,18 @@
     "start": "npm run build && npm run start:server",
     "start:server": "cross-env NODE_ENV=production node src/server.js",
     "build": "next build src",
+    "lint": "eslint -c .eslintrc .",
+    "test": "npm run test:unit && npm run test:e2e",
     "test:unit": "jest",
     "test:e2e": "webdriver-manager update && protractor",
-    "lint": "eslint -c .eslintrc .",
+    "test:coveralls": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
     "analyze": "cross-env ANALYZE=1 npm run build"
   },
   "jest": {
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/.next/"
+    ],
     "coverageDirectory": "coverage",
     "collectCoverageFrom": [
       "src/**/*.js",
@@ -46,6 +52,7 @@
     "babel-eslint": "^7.2.3",
     "babel-jest": "^20.0.3",
     "chromedriver": "^2.32.0",
+    "coveralls": "^2.13.1",
     "enzyme": "^2.9.1",
     "eslint": "^4.6.0",
     "eslint-config-hardcore-react": "^0.2.7",
