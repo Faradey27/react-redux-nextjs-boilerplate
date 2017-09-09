@@ -21,7 +21,16 @@ class Home extends Component {
     return (
       <div data-testid="homePage">
         <p>{'Home Page'}</p>
-        {this.props.widgets.map((widget) => (<div key={widget.id}>{widget.id}</div>))}
+        {
+          this.props.widgets.map((widget) => (
+            <div
+              data-hook="home-widget"
+              key={widget.id}
+            >
+              {widget.id}
+            </div>
+          ))
+        }
       </div>
     );
   }

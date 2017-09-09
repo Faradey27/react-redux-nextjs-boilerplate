@@ -17,4 +17,14 @@ describe('Home Page', () => {
   it('should render with correct text', () => {
     expect(driver.when.created().get.text()).toBe('Home Page');
   });
+
+  it('should render widgets with data from server(nextjs)', (done) => {
+    const EXPECTED_NUMBER_OF_WIDGETS = 2;
+
+    driver.when.created().when.doServerDataLoad();
+    setTimeout(() => {
+      expect(driver.get.numberOfWidgets()).toBe(EXPECTED_NUMBER_OF_WIDGETS);
+      done();
+    });
+  });
 });

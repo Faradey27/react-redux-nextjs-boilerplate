@@ -6,7 +6,9 @@
     "mocha": true,
     "es6": true
   },
-  "rules": {},
+  "rules": {
+    "max-nested-callbacks": ["error", 5]
+  },
   "parser": "babel-eslint",
   "globals": {
     "expect": true,

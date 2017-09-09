@@ -5,9 +5,10 @@ import api from './../api';
 import createReducers from './reducer';
 import apiMiddleware from './middlewares/apiMiddleware';
 
-export default (initialState = {}) => {
+export default (initialState) => {
   const middlewares = [thunkMiddleware, apiMiddleware({ api })];
 
+  /* istanbul ignore next */
   if (process.env.NODE_ENV !== 'production') {
     const { logger } = require('redux-logger');
 
