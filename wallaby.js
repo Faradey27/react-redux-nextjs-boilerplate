@@ -7,6 +7,7 @@ module.exports = (wallaby) => ({
     { pattern: 'src/next.config.js', ignore: true },
     { pattern: 'src/server.js', ignore: true },
     'src/**/*.js*',
+    '__test__/utils/mockedStore.js',
     'src/**/*.png',
     'src/**/*.svg',
     'node_modules/bytesize-icons/dist/icons/*.svg',
