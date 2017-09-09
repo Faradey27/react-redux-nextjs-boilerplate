@@ -36,38 +36,38 @@
       }
     },
     "moduleNameMapper": {
-      "^.*[.](gif|ttf|eot|svg|png|jpg)$": "<rootDir>/__test__/utils/fileMock.js"
+      ".*[.](gif|ttf|eot|svg|png|jpg)$": "<rootDir>/__test__/utils/fileMock.js"
     }
   },
   "dependencies": {
-    "compression": "^1.7.0",
-    "cross-env": "^5.0.5",
-    "express": "^4.15.4",
-    "next": "^3.2.1",
-    "progress-bar-webpack-plugin": "^1.10.0",
-    "react": "^15.6.1",
-    "react-dom": "^15.6.1"
+    "compression": "1.7.0",
+    "cross-env": "5.0.5",
+    "express": "4.15.4",
+    "next": "3.2.1",
+    "progress-bar-webpack-plugin": "1.10.0",
+    "react": "15.6.1",
+    "react-dom": "15.6.1"
   },
   "devDependencies": {
-    "babel-eslint": "^7.2.3",
-    "babel-jest": "^21.0.0",
-    "chromedriver": "^2.32.0",
-    "coveralls": "^2.13.1",
-    "enzyme": "^2.9.1",
-    "eslint": "^4.6.0",
-    "eslint-config-hardcore-react": "^0.2.7",
-    "eslint-loader": "^1.9.0",
-    "eslint-plugin-fp": "^2.3.0",
-    "eslint-plugin-import": "^2.7.0",
-    "eslint-plugin-jsx-a11y": "^6.0.2",
-    "eslint-plugin-react": "^7.3.0",
-    "jest": "^21.0.1",
-    "node-fetch": "^1.7.2",
-    "protractor": "^5.1.2",
-    "react-dev-utils": "^4.0.1",
-    "react-test-renderer": "^15.6.1",
-    "selenium-standalone": "^6.8.0",
-    "webpack-bundle-analyzer": "^2.9.0"
+    "babel-eslint": "7.2.3",
+    "babel-jest": "21.0.0",
+    "chromedriver": "2.32.0",
+    "coveralls": "2.13.1",
+    "enzyme": "2.9.1",
+    "eslint": "4.6.0",
+    "eslint-config-hardcore-react": "0.2.7",
+    "eslint-loader": "1.9.0",
+    "eslint-plugin-fp": "2.3.0",
+    "eslint-plugin-import": "2.7.0",
+    "eslint-plugin-jsx-a11y": "6.0.2",
+    "eslint-plugin-react": "7.3.0",
+    "jest": "21.0.1",
+    "node-fetch": "1.7.2",
+    "protractor": "5.1.2",
+    "react-dev-utils": "4.0.1",
+    "react-test-renderer": "15.6.1",
+    "selenium-standalone": "6.8.0",
+    "webpack-bundle-analyzer": "2.9.0"
   },
   "main": "pages/index.js",
   "keywords": [
