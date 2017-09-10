@@ -1,6 +1,7 @@
 const express = require('express');
 const next = require('next');
 const compression = require('compression');
+const path = require('path');
 
 const dev = process.env.NODE_ENV !== 'production';
 const app = next({ dir: __dirname, dev });
@@ -14,6 +15,7 @@ app.prepare().
 
     server.use(compression());
 
+    server.use('/assets/locales', express.static(path.join(__dirname, '/assets/locales')));
     server.get('*', (req, res) => handle(req, res));
 
     server.listen(DEFAULT_PORT, (err) => {

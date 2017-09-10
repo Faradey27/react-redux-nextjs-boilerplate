@@ -17,4 +17,8 @@ describe('About Page', () => {
   it('should render with correct text', () => {
     expect(driver.when.created().get.text()).toBe('About Page');
   });
+
+  it('getInitialProps should return localeData', async () => {
+    expect((await driver.get.initialProps()).initialProps.localeData.data.locale_data.messages['Home Page']).toEqual(['']);
+  });
 });

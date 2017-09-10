@@ -12,7 +12,9 @@ export default (initialState) => {
   if (process.env.NODE_ENV !== 'production') {
     const { logger } = require('redux-logger');
 
-    middlewares.push(logger);
+    if (process.browser) {
+      middlewares.push(logger);
+    }
   }
 
   return createStore(

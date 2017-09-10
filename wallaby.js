@@ -8,6 +8,7 @@ module.exports = (wallaby) => ({
     { pattern: 'src/server.js', ignore: true },
     'src/**/*.js*',
     '__test__/utils/mockedStore.js',
+    '__test__/utils/mockedAxios.js',
     'src/**/*.png',
     'src/**/*.svg',
     'node_modules/bytesize-icons/dist/icons/*.svg',

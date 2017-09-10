@@ -18,6 +18,10 @@ describe('Home Page', () => {
     expect(driver.when.created().get.text()).toBe('Home Page');
   });
 
+  it('getInitialProps should return localeData', async () => {
+    expect((await driver.get.initialProps()).initialProps.localeData.data.locale_data.messages['Home Page']).toEqual(['']);
+  });
+
   it('should render widgets with data from server(nextjs)', (done) => {
     const EXPECTED_NUMBER_OF_WIDGETS = 2;
 

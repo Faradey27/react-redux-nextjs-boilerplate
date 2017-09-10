@@ -42,6 +42,7 @@
     }
   },
   "dependencies": {
+    "axios": "^0.16.2",
     "babel-cli": "^6.26.0",
     "compression": "1.7.0",
     "cross-env": "5.0.5",
@@ -59,6 +60,7 @@
     "redux-thunk": "2.2.0"
   },
   "devDependencies": {
+    "axios-mock-adapter": "^1.9.0",
     "babel-eslint": "7.2.3",
     "babel-jest": "21.0.2",
     "chromedriver": "2.32.2",
