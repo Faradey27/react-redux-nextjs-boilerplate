@@ -1,6 +1,7 @@
 import { Component } from 'react';
 import { array } from 'prop-types';
 import withRedux from 'next-redux-wrapper';
+import { l } from './../../i18n';
 import createStore from './../../data/redux/create';
 import { loadEntities, selectEntitiesByViewId } from './../../data/redux/modules/entities';
 
@@ -20,7 +21,7 @@ class Home extends Component {
   render() {
     return (
       <div data-testid="homePage">
-        <p>{'Home Page'}</p>
+        <p>{l('Home Page')}</p>
         {
           this.props.widgets.map((widget) => (
             <div
