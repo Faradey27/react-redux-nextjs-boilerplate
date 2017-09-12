@@ -111,6 +111,6 @@
     "url": "https://github.com/Faradey27/react-redux-nextjs-boilerplate/issues"
   },
   "engines": {
-    "node": "8.4.0"
+    "node": ">= 8.4.0"
   }
 }
